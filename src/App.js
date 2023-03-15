@@ -10,7 +10,7 @@ import {
   theme,
   Center,
 } from '@chakra-ui/react';
-import {Helmet} from "react-helmet"
+import { Helmet } from "react-helmet"
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import Home from './components/Homepage'
@@ -18,6 +18,7 @@ import Home from './components/Homepage'
 function App() {
 
   const [pages] = useState([
+    { name: "home" },
     { name: "about" },
     { name: "projects" },
     { name: "contact" }
@@ -34,19 +35,19 @@ function App() {
           <title>Will Brent's Portfolio</title>
         </Helmet>
 
-      <Box>
+        <Box>
 
-        <NavBar />
+          <NavBar />
 
-      </Box>
+        </Box>
 
-      <Box>
+        <Box>
 
-        <Home />
+          <Home />
 
-      </Box>
+        </Box>
 
-      <Footer />
+        <Footer />
       </div>
     </ChakraProvider>
   );
