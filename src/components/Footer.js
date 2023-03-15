@@ -5,7 +5,7 @@ import samuraiLogo from "../assets/SVG/Samurai.svg"
 export default function Footer() {
 
     return (
-        <Box textAlign="Center" display="flex" flexDirection="column">
+        <Box textAlign="Center" display="flex" flexDirection="column" bg='grey'>
 
             <Box border="5px solid red" display="flex" flexDirection="row" justifyContent="space-evenly" >
                 <Box flexDirection="row" border="1px solid blue">
@@ -24,7 +24,7 @@ export default function Footer() {
             </Box>
 
             <Box fontSize="xl" border="1px solid purple" marginTop="20px">
-                <Text>Will Brent 2023</Text>
+                <Text>Ⓒ Will Brent 2023</Text>
             </Box>
 
         </Box>

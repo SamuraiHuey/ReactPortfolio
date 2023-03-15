@@ -10,8 +10,7 @@ import {
   theme,
   Center,
 } from '@chakra-ui/react';
-// import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Logo } from './Logo';
+import {Helmet} from "react-helmet"
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import Home from './components/Homepage'
@@ -28,20 +27,27 @@ function App() {
 
   return (
     <ChakraProvider theme={theme}>
+
+      <div>
+        <Helmet>
+          <meta charSet='utf-8' />
+          <title>Will Brent's Portfolio</title>
+        </Helmet>
+
       <Box>
 
         <NavBar />
-        {/* <ColorModeSwitcher justifySelf="flex-end" /> */}
-
-
 
       </Box>
 
-      <Box textAlign="center" fontSize="xxx-large">
+      <Box>
+
         <Home />
+
       </Box>
 
       <Footer />
+      </div>
     </ChakraProvider>
   );
 }
